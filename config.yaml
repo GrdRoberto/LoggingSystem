@@ -1,0 +1,14 @@
+database:
+  server: "locahost\\SQLEXPRESS"
+  name: "DBNAME"
+  username: "username"
+  password: "password"
+  log_directory: "./Logs"
+  query: |
+    SELECT ...
+    FROM 
+    WHERE DataOra >= '{start_date}'
+      AND DataOra <= '{end_date}'
+    ORDER BY [ID] ASC
+compression:
+  mode: "rar" # Options: "zip" - default compatible with windows explorer , "rar" - default compatible with only winrar
